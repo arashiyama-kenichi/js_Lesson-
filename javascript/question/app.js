@@ -69,7 +69,7 @@ console.log(user)
 let calc = {};
 
 // add メソッド
-calc.add = function(x,y){
+calc.add = function(x,y) {
     console.log(x +y);
 };
 calc.add(3,4);
@@ -106,13 +106,58 @@ console.log(`${5}を${3}で割った余りは${remainder}です。`);
 
 //Q10
 
+
 function foo() {
-    let t = 1;
+    let x = 1;
   }
-  console.log(t);
+  console.log(x);
 
-//関数内だけがスコープが有効な為、エラーが出る
-// 関数内でconsole.log(X);が定義されてれば、関数の外で定義した変数は関数の課からでも
-// 参照可能
+//関数内だけがスコープが有効なため、エラーが出る
+//関数内でconsole.log(X);が記述されてれば、スコープの有効範囲内のため、返ってくる。
+//また、関数外で変数(x)が定義されている場合、関数の外で定義した変数は関数の中からでも参照できるので、
+//値が返ってくる。
 
 
+// 応用編問題
+// Q1 標準組み込みオブジェクト
+const randomNumberInt = Math.floor(Math.random() * 9);
+console.log(randomNumberInt);
+
+// // Q2 コールバック関数
+function message() {
+    console.log("Hello World!");
+  }
+
+  setTimeout(message, 3000);
+
+// // Q3 if
+let num = 0;
+if (num > 0) {
+    console.log('num is greater than 0');
+  }else if (num < 0) {
+    console.log('num is less than 0');
+  } else if (num == 0) {
+    console.log('num is 0');
+  }
+
+
+// Q4 for
+for (let i = 0; i < 100; i++) {
+    console.log(i);
+}
+
+// Q5 for × if
+
+let mixed = [4, '2', 5, '8', '9', 0, 1];
+
+for (const item of mixed) {
+    if (typeof item === 'number'){
+        if (item % 2 === 0) {
+            console.log(`even`);
+        } else {
+            console.log(`odd`);
+        }
+        } else {
+        console.log(`not number`);
+        }
+}
