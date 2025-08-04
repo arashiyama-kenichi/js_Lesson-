@@ -17,8 +17,8 @@ let user = {
     age: 26,
     bloodType: 'A',
     favorite: 'card',
-  };
-  console.log(user.age);
+};
+console.log(user.age);
 
 //Q4 配列✖︎オブジェクト
 let playerList = [
@@ -37,12 +37,12 @@ let playerList = [
         age: 22,
         favorites: ['Football', 'Smash Bros.'],
     },
-    ];
+];
 
     console.log(playerList[1].favorites[1]);
 
 //Q5 四則演算
-console.log((playerList[0].age + playerList[1].age + playerList[2].age) / 3);
+console.log((playerList[0].age + playerList[1].age + playerList[2].age) / playerList.length);
 
 
 
@@ -69,8 +69,8 @@ console.log(user)
 let calc = {};
 
 // add メソッド
-calc.add = function(x,y) {
-    console.log(x +y);
+calc.add = function(x, y) {
+    console.log(x + y);
 };
 calc.add(3,4);
 
@@ -107,10 +107,10 @@ console.log(`${5}を${3}で割った余りは${remainder}です。`);
 //Q10
 
 
-function foo() {
-    let x = 1;
-  }
-  console.log(x);
+// function foo() {
+//     let x = 1;
+// }
+//   console.log(x);
 
 //関数内だけがスコープが有効なため、エラーが出る
 //関数内でconsole.log(X);が記述されてれば、スコープの有効範囲内のため、返ってくる。
@@ -126,19 +126,19 @@ console.log(randomNumberInt);
 // // Q2 コールバック関数
 function message() {
     console.log("Hello World!");
-  }
+}
 
-  setTimeout(message, 3000);
+setTimeout(message, 3000);
 
 // // Q3 if
 let num = 0;
 if (num > 0) {
     console.log('num is greater than 0');
-  }else if (num < 0) {
+} else if (num < 0) {
     console.log('num is less than 0');
-  } else if (num == 0) {
+} else if (num == 0) {
     console.log('num is 0');
-  }
+}
 
 
 // Q4 for
@@ -151,13 +151,13 @@ for (let i = 0; i < 100; i++) {
 let mixed = [4, '2', 5, '8', '9', 0, 1];
 
 for (const item of mixed) {
-    if (typeof item === 'number'){
-        if (item % 2 === 0) {
-            console.log(`even`);
-        } else {
-            console.log(`odd`);
-        }
-        } else {
-        console.log(`not number`);
-        }
+if (typeof item === 'number'){
+    if (item % 2 === 0) {
+        console.log(`even`);
+    } else {
+        console.log(`odd`);
+    }
+    } else {
+    console.log(`not number`);
+    }
 }
