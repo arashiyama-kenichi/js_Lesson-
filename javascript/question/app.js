@@ -1,9 +1,9 @@
 //Q1 変数
 
-let nickname ='あらし';
+let nickname = 'あらし';
 let age = 31;
 
-console.log('私のニックネームは' + nickname + 'です。年齢は'+ age + 'です');
+console.log('私のニックネームは' + nickname + 'です。年齢は' + age + 'です');
 
 //Q2 配列
 
@@ -39,7 +39,7 @@ let playerList = [
     },
 ];
 
-    console.log(playerList[1].favorites[1]);
+console.log(playerList[1].favorites[1]);
 
 //Q5 四則演算
 console.log((playerList[0].age + playerList[1].age + playerList[2].age) / playerList.length);
@@ -47,13 +47,13 @@ console.log((playerList[0].age + playerList[1].age + playerList[2].age) / player
 
 
 //Q6 関数
-function sayHello(){
+function sayHello() {
     let text = 'Hello';
     console.log(text);
 }
 sayHello();
 
-sayWorld = function(){
+sayWorld = function () {
     console.log("World");
 };
 sayWorld();
@@ -69,25 +69,25 @@ console.log(user)
 let calc = {};
 
 // add メソッド
-calc.add = function(x, y) {
+calc.add = function (x, y) {
     console.log(x + y);
 };
-calc.add(3,4);
+calc.add(3, 4);
 
 // subtract メソッド
-calc.subtract = function(x, y) {
+calc.subtract = function (x, y) {
     console.log(x - y);
 };
 calc.subtract(15, 5);
 
 // multiply メソッド
-calc.multiply = function(x, y) {
+calc.multiply = function (x, y) {
     console.log(x * y);
 };
 calc.multiply(7, 7);
 
 // divide メソッド
-calc.divide = function(x, y) {
+calc.divide = function (x, y) {
     console.log(x / y);
 };
 calc.divide(25, 5);
@@ -151,13 +151,13 @@ for (let i = 0; i < 100; i++) {
 let mixed = [4, '2', 5, '8', '9', 0, 1];
 
 for (const item of mixed) {
-if (typeof item === 'number'){
-    if (item % 2 === 0) {
-        console.log(`even`);
+    if (typeof item === 'number') {
+        if (item % 2 === 0) {
+            console.log(`even`);
+        } else {
+            console.log(`odd`);
+        }
     } else {
-        console.log(`odd`);
-    }
-    } else {
-    console.log(`not number`);
+        console.log(`not number`);
     }
 }
