@@ -62,7 +62,11 @@ sayWorld();
 // Q7　メソッド
 
 user.barthday = `2000-09-27`;
-console.log(user)
+console.log(user);
+
+user.sayHello = `Hello!`;
+console.log(user);
+console.log(user.sayHello);
 
 
 //Q8 引数
