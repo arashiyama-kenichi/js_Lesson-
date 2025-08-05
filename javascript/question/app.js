@@ -105,7 +105,7 @@ const y = 3;
 
 const remainder = x % y;
 
-console.log(`${5}を${3}で割った余りは${remainder}です。`);
+console.log(`${x}を${y}で割った余りは${remainder}です。`);
 
 
 //Q10
